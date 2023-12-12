@@ -86,3 +86,54 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+// Financial analysis 
+function analyzeFinances(finances) {
+  // Initialize variables
+  let totalMonths = finances.length;
+  let netTotal = 0;
+  let totalChange = 0;
+  let greatestIncrease = { amount: 0 };
+  let greatestDecrease = { amount: 0 };
+
+ 
+  for (let i = 0; i < finances.length; i++) {
+    const [date, amount] = finances[i];
+    
+    // Calculate net total
+    netTotal += amount;
+
+    // Calculate change in Profit/Losses
+    if (i > 0) {
+      const change = amount - finances[i - 1][1];
+      totalChange += change;
+
+      // Update greatest increase and decrease
+      if (change > greatestIncrease.amount) {
+        greatestIncrease.amount = change;
+        greatestIncrease.date = date;
+      }
+
+      if (change < greatestDecrease.amount) {
+        greatestDecrease.amount = change;
+        greatestDecrease.date = date;
+      }
+    }
+  }
+
+  // Calculate average change
+  const averageChange = totalChange / (totalMonths - 1);
+
+  // Display result in console
+  console.log("Financial Analysis");
+  console.log("------------------");
+  console.log(`Total Months: ${totalMonths}`);
+  console.log(`Total: $${netTotal}`);
+  console.log(`Average Change: $${averageChange.toFixed(2)}`);
+  console.log(`Greatest Increase in Profits/Losses: ${greatestIncrease.date} ($${greatestIncrease.amount})`);
+  console.log(`Greatest Decrease in Profits/Losses: ${greatestDecrease.date} ($${greatestDecrease.amount})`);
+}
+
+// Call the function with the provided finances data
+analyzeFinances(finances);
