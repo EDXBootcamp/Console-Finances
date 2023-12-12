@@ -1,97 +1,72 @@
-# Unit 4 Challenge: Console Finances
+# Console Finances
 
-## Overview
+Welcome to Console Finances! This JavaScript application analyzes financial records, providing insights into the total number of months, net total amount, average change in Profit/Losses, greatest increase, and greatest decrease in Profits/Losses over a given period.
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+## Table of Contents
 
-## Instructions
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+## Introduction
 
-2. Copy the starter files in your local git repository.
+Console Finances is a financial analysis tool built with JavaScript. It's designed to assist in understanding key metrics from a provided financial dataset.
 
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
+## Features
 
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+- Total number of months calculation.
+- Net total amount calculation.
+- Average change in Profit/Losses calculation.
+- Identification of the greatest increase and decrease in Profits/Losses.
 
-* The total number of months included in the dataset.
+## Getting Started
 
-* The net total amount of Profit/Losses over the entire period.
+To get started with Console Finances, follow these steps:
 
-* The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-  * (`Total/(Number of months - 1)`)
+1. Clone this repository to your local machine.
 
-* The greatest increase in Profit/Losses (date and amount) over the entire period.
+```bash
+  git clone https://github.com/EDXBootcamp/Console-Finances.git
+```
 
-* The greatest decrease in Profit/Losses (date and amount) over the entire period.
+2. Open the `index.html` file in a web browser.
+3. Open the browser console to view the financial analysis.
 
-When you open your code in the browser your resulting analysis should look similar to the following:
+## Usage
 
-  ```text
-  Financial Analysis 
-  ----------------
-  Total Months: 86
-  Total: $38382578
-  Average Change: -2315.12
-  Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-  Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-  ```
+The financial analysis results will be displayed in the browser console. Make sure to have the browser console open when running the application.
 
-Your final code should print the analysis to the console.
+## Screenshots
 
-**Hints:**
+![Console Finances Screenshot](screenshot.png)
 
-* You will need to do some research on your own for this project!
+## Deployment
 
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
+The application is deployed and accessible online. Visit the live version [here](https://edxbootcamp.github.io/Console-Finances/).
 
-* How do you only print to the nearest 100th in JavaScript?
+## Contributing
 
-## Grading Requirements
+If you would like to contribute to this project, please follow these steps:
 
-This homework is graded based on the following criteria:
+1. Fork the repository.
+2. Create a new branch for your feature or improvement.
+3. Make changes and submit a pull request.
 
-### Technical Acceptance Criteria: 40%
+## 🚀 About Me
 
-* Satisfies all of the above acceptance criteria.
+I'm a full stack developer...
 
-### Deployment: 32%
+## 🔗 My Links
 
-* Application deployed at live URL.
+[![gihub](https://img.shields.io/badge/my_github-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/tjthouhid//)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tjthouhid)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tjthouhid)
 
-* Application loads with no errors.
+## License
 
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Repository Quality: 23%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 5%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This project is licensed under the [MIT License](LICENSE).
